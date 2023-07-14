@@ -39,19 +39,7 @@ form.addEventListener("submit", function(event) {
         timer: 3000
       })
       setTimeout(() => {
-        const elements = document.querySelectorAll(".login-card")
-        const elementsO = document.querySelectorAll(".after-stuff")
-
-        elements.forEach(function(element) {
-          element.style.display = "none";
-        });
-
-        elementsO.forEach(function(element) {
-          element.style.display = "block";
-          document.getElementById('logo').innerHTML = `Welcome ${data.username}`
-          document.getElementById('logoutButton').style.display = 'block';
-        });
-        
+        window.location.href = "/frontend-login-page/views/site/html/index.html";    
       }, 3000); 
   })
   .catch(error => {

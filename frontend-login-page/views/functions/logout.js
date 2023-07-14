@@ -19,6 +19,6 @@ logoutButton.addEventListener("click", function(){
         document.cookie = `username=; expires=${expires}; path=/`
         document.cookie = `password=; expires=${expires}; path=/`
         document.cookie = `loggedIn=; expires=${expires}; path=/`
-        window.location.href = "../index.html"
+        window.location.href = "/frontend-login-page/views/login.html";
     }, 3000); 
 });
