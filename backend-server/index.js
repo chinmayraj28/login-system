@@ -8,7 +8,7 @@ const port = 3000
 
 //Mongoose
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://gamer:y0uEl7nYEK1lAypU@cluster0.67tl9.mongodb.net/loginsystem');
+mongoose.connect('your-mongourl');
 const db = require('./models/accounts.js')
 
 app.use(cors());
